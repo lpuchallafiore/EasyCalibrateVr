@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capture", "Capture\Capture.vcxproj", "{C08984C8-8EBC-4151-BDF6-BC9D28360A17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D} = {74967187-DCF7-4C44-AA4B-1DEAB168314D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EasyCalibrateVrLib", "EasyCalibrateVrLib\EasyCalibrateVrLib.vcxproj", "{74967187-DCF7-4C44-AA4B-1DEAB168314D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reconstruct", "Reconstruct\Reconstruct.vcxproj", "{A4FA9C27-FF48-4C4C-87B7-EB780322F107}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D} = {74967187-DCF7-4C44-AA4B-1DEAB168314D}
+		{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C} = {6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EasyCalibrateVrTest", "EasyCalibrateVrTest\EasyCalibrateVrTest.vcxproj", "{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D} = {74967187-DCF7-4C44-AA4B-1DEAB168314D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render", "Render\Render.vcxproj", "{AEFD1FCD-72FA-47AB-8500-65B7C79640F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D} = {74967187-DCF7-4C44-AA4B-1DEAB168314D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C08984C8-8EBC-4151-BDF6-BC9D28360A17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C08984C8-8EBC-4151-BDF6-BC9D28360A17}.Debug|Win32.Build.0 = Debug|Win32
+		{C08984C8-8EBC-4151-BDF6-BC9D28360A17}.Release|Win32.ActiveCfg = Release|Win32
+		{C08984C8-8EBC-4151-BDF6-BC9D28360A17}.Release|Win32.Build.0 = Release|Win32
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D}.Debug|Win32.Build.0 = Debug|Win32
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D}.Release|Win32.ActiveCfg = Release|Win32
+		{74967187-DCF7-4C44-AA4B-1DEAB168314D}.Release|Win32.Build.0 = Release|Win32
+		{A4FA9C27-FF48-4C4C-87B7-EB780322F107}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4FA9C27-FF48-4C4C-87B7-EB780322F107}.Debug|Win32.Build.0 = Debug|Win32
+		{A4FA9C27-FF48-4C4C-87B7-EB780322F107}.Release|Win32.ActiveCfg = Release|Win32
+		{A4FA9C27-FF48-4C4C-87B7-EB780322F107}.Release|Win32.Build.0 = Release|Win32
+		{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}.Debug|Win32.Build.0 = Debug|Win32
+		{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}.Release|Win32.ActiveCfg = Release|Win32
+		{6E2309BB-1D76-4BBC-A8CE-CF5529EBCD1C}.Release|Win32.Build.0 = Release|Win32
+		{AEFD1FCD-72FA-47AB-8500-65B7C79640F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEFD1FCD-72FA-47AB-8500-65B7C79640F6}.Debug|Win32.Build.0 = Debug|Win32
+		{AEFD1FCD-72FA-47AB-8500-65B7C79640F6}.Release|Win32.ActiveCfg = Release|Win32
+		{AEFD1FCD-72FA-47AB-8500-65B7C79640F6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

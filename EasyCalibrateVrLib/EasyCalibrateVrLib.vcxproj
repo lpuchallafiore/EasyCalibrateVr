@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74967187-DCF7-4C44-AA4B-1DEAB168314D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EasyCalibrateVrLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Libraries\ViconDataStreamSDK;C:\Libraries\aruco-1.2.4\src;C:\Libraries\SSBA-3.0;C:\Libraries\cvsba-1.0.0\src;C:\Libraries\opencv\build\include;C:\Libraries\G3D-8.00-src\source\build\win-i386-vc10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ViconDataStreamSDK_CPP.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Libraries\ViconDataStreamSDK;</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Libraries\ViconDataStreamSDK;C:\Libraries\aruco-1.2.4\src;C:\Libraries\SSBA-3.0;C:\Libraries\cvsba-1.0.0\src;C:\Libraries\opencv\build\include;C:\Libraries\G3D-8.00-src\source\build\win-i386-vc10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ViconDataStreamSDK_CPP.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Libraries\ViconDataStreamSDK;</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AppState.h" />
+    <ClInclude Include="CalibData.h" />
+    <ClInclude Include="Calibration.h" />
+    <ClInclude Include="CameraExtrinsicsState.h" />
+    <ClInclude Include="CameraIntrinsicsState.h" />
+    <ClInclude Include="ComputeState.h" />
+    <ClInclude Include="DisplayTile.h" />
+    <ClInclude Include="GrayCodeComputeState.h" />
+    <ClInclude Include="GrayCodeState.h" />
+    <ClInclude Include="MeasureState.h" />
+    <ClInclude Include="ProcessData.h" />
+    <ClInclude Include="ProjectionVRCamera.h" />
+    <ClInclude Include="ProjectorDimensionStates.h" />
+    <ClInclude Include="rply.h" />
+    <ClInclude Include="ScreenMesh.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Triangulate.h" />
+    <ClInclude Include="Vicon.h" />
+    <ClInclude Include="ViconManipulator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CalibData.cpp" />
+    <ClCompile Include="Calibration.cpp" />
+    <ClCompile Include="CameraExtrinsicsState.cpp" />
+    <ClCompile Include="CameraIntrinsicsState.cpp" />
+    <ClCompile Include="ComputeState.cpp" />
+    <ClCompile Include="DisplayTile.cpp" />
+    <ClCompile Include="GrayCodeComputeState.cpp" />
+    <ClCompile Include="GrayCodeState.cpp" />
+    <ClCompile Include="MeasureState.cpp" />
+    <ClCompile Include="ProcessData.cpp" />
+    <ClCompile Include="ProjectionVRCamera.cpp" />
+    <ClCompile Include="ProjectorDimensionStates.cpp" />
+    <ClCompile Include="rply.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ScreenMesh.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Triangulate.cpp" />
+    <ClCompile Include="Vicon.cpp" />
+    <ClCompile Include="ViconManipulator.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
